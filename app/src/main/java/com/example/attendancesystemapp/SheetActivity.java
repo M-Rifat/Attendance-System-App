@@ -27,9 +27,6 @@ import java.util.Calendar;
 
 public class SheetActivity extends AppCompatActivity {
     Button logout;
-    //private LinearLayout linear;
-    // Bitmap bitmap;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,110 +58,6 @@ public class SheetActivity extends AppCompatActivity {
             }
         });
 
-
-        /*linear = findViewById(R.id.lineard);
-        btn = findViewById(R.id.btn_create_pdf);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-            @Override
-            public void onClick(View v) {
-                Log.d("size", "" + linear.getWidth() + " " + linear.getWidth());
-                bitmap = LoadBitmap(linear, linear.getWidth(), linear.getHeight());
-                createPdf();
-            }
-        });
-      /*  btn_create_pdf = (Button) findViewById(R.id.btn_create_pdf);
-        Dexter.withActivity(this)
-                .withPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                .withListener(new PermissionListener() {
-                    @Override
-                    public void onPermissionGranted(PermissionGrantedResponse response) {
-                        btn_create_pdf.setOnClickListener(new View.OnClickListener() {
-                            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-                            @Override
-                            public void onClick(View v) {
-                                createPDFFile(Common.getAppPath(SheetActivity.this) + "test_pdf.pdf");
-                            }
-                        });
-                    }
-
-                    @Override
-                    public void onPermissionDenied(PermissionDeniedResponse response) {
-
-                    }
-
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-
-                    }
-                })
-                .check();
-    }
-   @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    private void createPDFFile(String path) {
-        if (new File(path).exists())
-            new File(path).delete();
-        try {
-            Document document = new Document();
-            //save
-            PdfWriter.getInstance(document, new FileOutputStream(path));
-            //open to write
-            document.open();
-
-            //setting
-            document.setPageSize(PageSize.A4);
-            document.addCreationDate();
-            document.addAuthor("com.nitichan");
-            document.addCreator("App");
-
-            //Font Setting
-            BaseColor colorAccent = new BaseColor(0,153,204,255);
-            float fontSize=20.0f;
-            float valueFontSize = 26.0f;
-
-            //custom font
-            BaseFont fontName = BaseFont.createFont("assets/fonts/brandon_medium.otf","UTF-8",BaseFont.EMBEDDED);
-
-            //Create Title of Document
-            Font titleFont = new Font(fontName,36.0f,Font.NORMAL,BaseColor.BLACK);
-            showTable1(document,"Attendance",Element.ALIGN_CENTER,titleFont);
-            document.close();
-
-            Toast.makeText(this,"Success",Toast.LENGTH_SHORT).show();
-
-            printPDF();
-
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    private void printPDF() {
-        PrintManager printManager = (PrintManager)getSystemService(Context.PRINT_SERVICE);
-        try{
-            PrintDocumentAdapter printDocumentAdapter = new PdfDocumentAdapter(SheetActivity.this,Common.getAppPath(SheetActivity.this)+"test_pdf.pdf");
-            printManager.print("Document",printDocumentAdapter,new PrintAttributes.Builder().build());
-        }
-        catch (Exception ex)
-        {
-            Log.e("com.nitichan","" +ex.getMessage());
-        }
-    }
-
-    private void showTable1(Document document, String text, int align, Font font) throws DocumentException {
-        Chunk chunk = new Chunk(text, font);
-        Paragraph paragraph = new Paragraph(chunk);
-        paragraph.setAlignment(align);
-        document.add(paragraph);
-        DBHelper dbHelper = new DBHelper(this);
-
-    }*/
     }
     private void showTable(){
         DBHelper dbHelper = new DBHelper(this);
@@ -242,66 +135,5 @@ public class SheetActivity extends AppCompatActivity {
         return calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
     }
 
-   /* private Bitmap LoadBitmap(View v, int width, int height) {
-        Bitmap bitmap = Bitmap.createBitmap(width,height,Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(bitmap);
-        v.draw(canvas);
-         return bitmap;
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    private void createPdf() {
-        WindowManager windowManager = (WindowManager)getSystemService(Context.WINDOW_SERVICE);
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        this.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        float width= displayMetrics.widthPixels;
-        float height= displayMetrics.heightPixels;
-        int convertWidth = (int)width,convertHeight=(int)height;
-
-        PdfDocument document = new PdfDocument();
-        PdfDocument.PageInfo pageInfo= new PdfDocument.PageInfo.Builder(convertWidth,convertHeight,1).create();
-        PdfDocument.Page page = document.startPage(pageInfo);
-        Canvas canvas = page.getCanvas();
-
-       Paint paint= new Paint();
-        canvas.drawPaint(paint);
-        bitmap= Bitmap.createScaledBitmap(bitmap,convertWidth,convertHeight,true);
-
-        canvas.drawBitmap(bitmap,0,0,null);
-        document.finishPage(page);
-
-        String targetPdf="/sdcard/Download/page.pdf";
-        File file;
-        file = new File(targetPdf);
-        try{
-            document.writeTo(new FileOutputStream(file));
-        }
-        catch(IOException e) {
-            e.printStackTrace();
-            Toast.makeText(this, "something wrong try again" + e.toString(), Toast.LENGTH_SHORT).show();
-
-            document.close();
-            Toast.makeText(this, "successfully downloaded", Toast.LENGTH_SHORT).show();
-
-            openPdf();
-        }
-
-        }
-
-    private void openPdf() {
-        File file = new File("/sdcard/Download/page.pdf");
-        if(file.exists()){
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            Uri uri = Uri.fromFile(file);
-            intent.setDataAndType(uri,"application/pdf");
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            try{
-                startActivity(intent);
-            }
-            catch (ActivityNotFoundException e){
-                Toast.makeText(this,"No Application for pdf" ,Toast.LENGTH_SHORT).show();
-            }
-        }
-    }*/
 
 }

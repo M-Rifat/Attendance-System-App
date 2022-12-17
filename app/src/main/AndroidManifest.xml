@@ -23,15 +23,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.attendancesystemapp.MainActivity" />
-    <!--    <provider
-            android:authorities="com.nitichan.attendanceapp.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true"
-            android:name="androidx.core.content.FileProvider">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
-        </provider> -->
     </application>
     
 
