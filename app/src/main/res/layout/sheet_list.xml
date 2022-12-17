@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#4CAF50"
     android:layout_width="match_parent"
     android:layout_height="96dp"
     android:padding="16dp"
@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="aug 2021"
-        android:textColor="@android:color/black"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"/>
 

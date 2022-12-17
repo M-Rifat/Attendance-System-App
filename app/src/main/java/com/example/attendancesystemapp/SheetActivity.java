@@ -214,9 +214,9 @@ public class SheetActivity extends AppCompatActivity {
         for (int i = 0; i < rowSize; i++) {
             rows[i] = new TableRow(this);
             if (i % 2 == 0)
-                rows[i].setBackgroundColor(Color.parseColor("#000000"));
+                rows[i].setBackgroundColor(Color.parseColor("#4CAF50"));
             else
-                rows[i].setBackgroundColor(Color.parseColor("#080808"));
+                rows[i].setBackgroundColor(Color.parseColor("#FFFFFFFF"));
             roll_tvs[i].setPadding(16, 16, 16, 16);
             name_tvs[i].setPadding(16, 16, 16, 16);
 
