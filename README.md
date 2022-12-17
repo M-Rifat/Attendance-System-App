@@ -4,22 +4,15 @@ This app helps Teachers to take  attendance and store, fetch data from SQLite Da
 
 
 <p float="left">
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-182859.jpg" width="370" height="100%"/>
+ <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-182859.jpg" width="370" height="80%"/>
  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-182928.jpg" width="370" height="100%"/>
+ <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-182928.jpg" width="370" height="80%"/>
 </p>
 <p float="left">
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-182947.jpg" width="370" height="100%"/>
+ <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-182947.jpg" width="370" height="80%"/>
  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-183114.jpg" width="370" height="100%"/>
+ <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-183114.jpg" width="370" height="80%"/>
 </p>
 <p float="left">
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-183131.jpg" width="370" height="100%"/>
- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-183755.jpg" width="370" height="100%"/>
-</p>
-<p float="left">
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-183803.jpg" width="370" height="100%"/>
- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
- <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-183831.jpg" width="370" height="100%"/>
+ <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-183131.jpg" width="370" height="80%"/>
 </p>
