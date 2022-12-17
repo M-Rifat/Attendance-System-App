@@ -3,9 +3,18 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="#4CAF50"
     android:layout_gravity="center">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Attendance System "
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/loginscrn"

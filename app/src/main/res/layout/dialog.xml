@@ -52,7 +52,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textColor="@android:color/white"
-                    android:background="@drawable/rounded_button_colored"
+                    android:backgroundTint="#4CAF50"
                     android:text="Cancel" />
                 <TextView
                     android:layout_width="0dp"
@@ -65,7 +65,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textColor="@android:color/white"
-                    android:background="@drawable/rounded_button_colored"
+                    android:backgroundTint="#4CAF50"
                     android:text="ADD" />
             </LinearLayout>
 
