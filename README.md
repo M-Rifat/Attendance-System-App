@@ -1,7 +1,7 @@
 # Attendance-System-App
 This is a Android Mobile Application using Java and SQLite Database.
 This app helps Teachers to take  attendance and store, fetch data from SQLite Database. 
-<<<<<<
+# >>>>>>>>
 <h3>Module</h3>
 <ul>
  	<li>Take attendance and keep them class wise</li>
@@ -10,7 +10,7 @@ This app helps Teachers to take  attendance and store, fetch data from SQLite Da
  	<li>Simple  designed interface</li>
  <li>Monthly Attendance Sheet</li>
 </ul>
-
+# Screenshots
 <p float="left">
  <img src="https://github.com/M-Rifat/Attendance-System-App/blob/master/Download-APK/Screenshot_20221217-182859.jpg" width="370" height="80%"/>
  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
